@@ -1,1 +1,32 @@
 @import "tailwindcss";
+
+@font-face {
+    font-family: "Nav";
+    src: url(../public/Fonts/Athletics/Athletics-Medium.woff2);
+}
+
+@font-face {
+    font-family: "Heading";
+    src: url(../public/Fonts/orbix/Orbix-Regular.woff2);
+}
+
+@layer utilities{
+
+   .center{
+     @apply flex justify-center items-center
+   }
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE 10+ */
+}
+
+body::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
+}
